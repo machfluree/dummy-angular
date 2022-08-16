@@ -1,0 +1,93 @@
+<div class="main-container">
+  <div class="content-heading-container">
+    <h1>Notes</h1>
+    <div class="content-actions-container">
+      <form class="search-form" action="">
+        <mat-form-field class="search-input" appearance="fill">
+          <mat-label>
+            <mat-icon>search</mat-icon>
+            Search
+          </mat-label>
+          <input matInput placeholder="Type your keywords" />
+        </mat-form-field>
+      </form>
+      <button mat-flat-button color="primary">Add Note</button>
+    </div>
+  </div>
+  <div class="card-notes-container">
+    <div class="card-column">
+      <mat-card class="note-card" mat-card-primary>
+        <mat-card-title>
+          <h4>Note 1</h4>
+        </mat-card-title>
+        <mat-card-subtitle>Last edit: Jun 07, 2021</mat-card-subtitle>
+        <mat-card-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus asperiores nam quam labore iure eos ea tenetur, quia
+          beatae expedita in officiis numquam voluptatem officia consequatur
+          eligendi eum ut molestiae. quia beatae expedita in officiis numquam
+          voluptatem officia consequatur eligendi eum ut molestiae.
+          <br /><br />
+          quia beatae expedita in officiis numquam voluptatem officia
+          consequatur eligendi eum ut molestiae.
+          <br /><br />
+          quia beatae expedita in officiis numquam voluptatem officia
+          consequatur eligendi eum ut molestiae. quia beatae expedita in
+          officiis numquam
+        </mat-card-content>
+        <mat-card-actions class="note-actions">
+          <button mat-icon-button>
+            <mat-icon>palette</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>archive</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>label</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button [matMenuTriggerFor]="noteMenu">
+            <mat-icon>more_vert_icon</mat-icon>
+            <mat-menu #noteMenu="matMenu">
+              <button mat-menu-item>Duplicate</button>
+              <button mat-menu-item>Delete</button>
+            </mat-menu>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+      <mat-card class="note-card">
+        <mat-card-title>
+          <h4>Note 1</h4>
+        </mat-card-title>
+        <mat-card-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus asperiores nam quam labore iure eos ea tenetur, quia
+          beatae expedita in officiis numquam voluptatem
+        </mat-card-content>
+        <mat-card-actions class="note-actions">
+          <button mat-icon-button>
+            <mat-icon>palette</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>archive</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>label</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button [matMenuTriggerFor]="noteMenu">
+            <mat-icon>more_vert_icon</mat-icon>
+            <mat-menu #noteMenu="matMenu">
+              <button mat-menu-item>Duplicate</button>
+              <button mat-menu-item>Delete</button>
+            </mat-menu>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

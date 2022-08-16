@@ -1,0 +1,80 @@
+div.main-container {
+  margin: 12px;
+  /* border-radius: 12px; */
+  /* background-color: white; */
+}
+
+div.content-heading-container {
+  padding: 8px 30px 16px 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+}
+
+div.content-heading-container h1 {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+div.content-actions-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+div.card-notes-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 16px;
+  padding: 8px 30px 24px 32px;
+}
+
+div.card-notes-container div.card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+div.card-column mat-card.note-card mat-card-title h4 {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+div.card-column mat-card.note-card mat-card-subtitle {
+    font-size: smaller;
+}
+
+mat-card-actions.note-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1080px) {
+  div.card-notes-container {
+    flex-direction: column;
+  }
+}
+
+div.card-column mat-card.note-card[mat-card-primary] {
+    background-color: #3f51b5;
+    color: white;
+}
+
+div.card-column mat-card.note-card[mat-card-primary] mat-card-subtitle {
+    color: white;;
+}
+
+div.card-column mat-card.note-card[mat-card-primary] mat-card-actions.note-actions {
+    color: rgba(256, 256, 256, 0.3);
+}
