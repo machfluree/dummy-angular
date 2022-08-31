@@ -1,30 +1,18 @@
-# DummyAngular
+# Note App
 
-## Info
-Note app for using MEAN Stack.
+## Overview
+A note app similar to Google's Keep Note (actually it was my reference). Its main purpose is to save notes for keeps. This app is using Angular-CLI for faster development purposes.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
+## Stack used
+MEAN (MongoDB, ExpressJS, Angular TS, NodeJS)
 
-## Development server
+## Dependency Versions
+Angular CLI: ~13.2.1<br>
+NodeJS: 16.17.0<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run the App
+Clone the repo.<br>
+Run <code>npm install</code> to install its dependencies.<br>
+Run <code>ng serve</code> to run the app.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Happy coding!
